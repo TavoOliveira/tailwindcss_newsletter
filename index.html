@@ -6,12 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            paisagem: "url('./fundo.jpg')",
+          }
+        }
+      }
+    }
+  </script>
 
   <title>Newsletter</title>
 
 </head>
 
-<body class="bg-cover bg-no-repeat bg-[url('./fundo.jpg')] h-screen flex justify-center items-center">
+<body class="bg-cover bg-no-repeat bg-paisagem h-screen flex justify-center items-center">
   <div class="flex flex-col items-center text-white gap-5 p-5 backdrop-blur bg-white bg-opacity-20 shadow-lg rounded">
     <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
       <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
